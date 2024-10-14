@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <link rel="stylesheet" href="styles.css" />
+        <!-- Link to your CSS file -->
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f2f2f2;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            form {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            h1 {
+                margin-bottom: 20px;
+                color: #333;
+                text-align: center;
+            }
+
+            label {
+                margin-bottom: 5px;
+                color: #666;
+            }
+
+            input[type="text"] {
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size: 14px;
+            }
+            input[type="password"] {
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size: 14px;
+            }
+            input[type="submit"] {
+                padding: 10px;
+                border: none;
+                border-radius: 4px;
+                background-color: #ffffff;
+                color: black;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #c4c4c4;
+            }
+            input[type="button"] {
+                padding: 10px;
+                border: none;
+                border-radius: 4px;
+                background-color: #ffffff;
+                color: black;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            input[type="button"]:hover {
+                background-color: #c4c4c4;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="login.php" method="post">
+            <h1>Login</h1>
+            <label>Username</label>
+            <input type="text" name="Username" required />
+            <label>Password</label>
+            <input type="password" name="Password" required />
+            <input type="submit" value="Log In" />
+            <input
+                type="button"
+                value="Register"
+                onclick="window.location.href='register.html';"
+            />
+        </form>
+    </body>
+</html>
