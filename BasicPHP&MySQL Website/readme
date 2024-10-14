@@ -1,0 +1,10 @@
+[+] what you need to test :
+  a mySQL server in the localhost + a database named 'test' + a table names Eleve where columns are id, Nom, Prénom, Email, username, password.
+
+
+[+] Criterias of the project :
+  User can create an account
+  User can log in to his account with a welcome message
+  No JS / only PHP
+  Not give security measures importance
+  Create an admin dashboard when admin/admin is typed where admin can delete and modify the accounts
